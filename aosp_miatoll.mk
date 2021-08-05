@@ -8,15 +8,13 @@
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 # Inherit some common DotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
-
-DOT_OFFICIAL := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := dot_miatoll
+PRODUCT_NAME := aosp_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Miatoll
